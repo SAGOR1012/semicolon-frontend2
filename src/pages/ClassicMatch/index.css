@@ -1,0 +1,22 @@
+.holographic-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    border 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 24px 0 rgba(204, 32, 32, 0.08);
+  background: #f8fafc;
+  border: 1px solid transparent;
+}
+
+.holographic-card::before {
+  display: none;
+}
+
+.holographic-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 8px 32px 0 rgba(0, 212, 255, 0.18);
+  border: 1px solid #d62a5d;
+  box-shadow: 0 0 16px 2px #080253, 0 8px 32px 0 rgba(0, 212, 255, 0.18);
+}
